@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lato:wght@300;400&family=Open+Sans:wght@300;400;600&family=Parisienne&family=Secular+One&family=Great+Vibes&family=Varela&family=Lora&family=Marcellus&family=Amiko&family=Petrona:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+
+
+/*
+font-family: 'Parisienne', cursive;
+font-family: 'Secular One', sans-serif;
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  bottom: 11px;
+  left: calc(50% - 80px);
+  background: #E47A2E;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  bottom: 11px;
+  right: calc(50% - 80px);
+  background: #E47A2E;
+}
+*/
+
+/*NAVBAR*/
+
+.navbar h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #F4F0EC;
+
+}
+
+.navbar .nav-link {
+    font-family: 'Secular One', sans-serif;
+    color: #918F94;
+}
+
+.navbar .active {
+    color: #A9A9A9;
+
+}
+
+
+/*CAROUSEL*/
+
+#carouselExampleSlidesOnly:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+    z-index: 1;
+
+}
+
+.d-sm-block .carousel-item img {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1f2227;
+    background-position: center;
+    object-fit: contain;
+    vertical-align: middle;
+    object-position: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.d-sm-none .carousel-item img {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1f2227;
+    background-position: center;
+    object-fit: contain;
+    vertical-align: middle;
+    object-position: center;
+    height: 100vh;
+
+}
+
+
+@media (max-width:991px) {
+    .carousel .carousel-item {
+        background-size: cover;
+        /* To make the background image looks good */
+
+    }
+
+    #event .lead {
+        text-align: left;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+
+/*LANDING PAGE*/
+
+
+.landing {
+    z-index: 2;
+    margin-top: 30vh;
+}
+
+
+.covertext {
+    color: white;
+}
+
+.covertext h2 {
+    font-family: Lato;
+}
+
+.covertext .btn {
+    font-family: Open Sans;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.covertext .btn a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.covertext .btn a:hover {
+    color: white;
+}
+
+.profile {
+    background-image: url(/img/danandcarla.jpg);
+    background-size: contain;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    width: 300px;
+    border-radius: 30%;
+    z-index: 2;
+
+}
+
+/*LANDING PAGE MOBILE*/
+
+@media (max-width: 768px) {
+
+    .profile {
+        margin: 0 auto;
+        height: 200px;
+        width: 200px;
+    }
+
+    .landing {
+        margin-top: 25vh;
+
+    }
+
+    .submit.btn {
+        width: 150px;
+        background: #3C2D40;
+
+    }
+}
+
+
+@media (min-width: 600px) {
+
+    #event .lead {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}
+
+
+/*CONTENT VISUALS*/
+
+
+img:hover,
+.map:hover {
+    transform: scale(1.2);
+    transition: 1s;
+    box-shadow: 0px 2px 2px 0px;
+}
+
+.box,
+.map {
+    border-radius: 10px;
+}
+
+.box {
+    /*    border-radius: 10px;*/
+    width: 100%;
+}
+
+
+
+
+
+/*CONTENT TEXT*/
+
+.smallhead {
+
+    color: #E9DD93;
+    font-family: Open Sans;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+.title {
+    font-family: 'Great Vibes', cursive;
+    color: #F4F0EC;
+    text-align: center;
+}
+
+#rsvp h5,
+#hotels h3,
+#event h3 {
+    font-family: Lora;
+    color: #F4F0EC;
+}
+
+.lead {
+    /*    font-family: Marcellus;*/
+    font-family: 'Petrona', serif;
+    color: #F4F0EC;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:link:hover {
+    color: white;
+
+}
+
+#event button a:hover {
+    color: white;
+
+}
+
+.contact-form {
+    /*
+    background: url("/img/rsvpver.png") center center no-repeat;
+    background-size: contain;
+*/
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+#contact-form label,
+input {
+    font-family: Varela;
+}
+
+
+
+
+#hotels .box {
+    border-radius: 0px;
+
+}
+
+#hotels h3,
+.lead {
+    color: black;
+}
+
+#hotels .rounded {
+    background: #F4F0EC;
+    border-radius: 20px;
+}
+
+/*BACKGROUND COLORS*/
+
+.bg-purple {
+    background: #3C2D40;
+    color: #FFFFFF
+}
+
+.bg-lightgreen {
+    background: #A1C1B5;
+
+}
+
+.bg-cream {
+    background: cream;
+}
+
+.bg-beige {
+    background: #918F94;
+}
+
+.bg-white {
+    background: #F4F0EC;
+}
